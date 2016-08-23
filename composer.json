@@ -1,0 +1,30 @@
+{
+    "name": "onwwward/laravel-bugherd",
+    "description": "Laravel 5 wrapper for Bugherd API",
+    "license": "MIT",
+    "keywords": ["laravel", "lumen", "bugherd", "bug tracking"],
+    "authors": [
+      {
+        "name": "Roland Kalocsaven",
+        "email": "roland@onwwward.com"
+      }
+    ],
+    "require": {
+        "beleneglorion/php-bugherd-api": "^1.0",
+        "illuminate/support": "^5.2"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "^3.2",
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+      "psr-4": {
+        "Onwwward\\Bugherd\\": "src/Onwwward/Bugherd/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Onwwward\\Bugherd\\Tests\\": "tests/"
+      }
+    }
+}
