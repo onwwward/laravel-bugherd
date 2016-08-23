@@ -3,9 +3,9 @@
 namespace Onwwward\Bugherd;
 
 use Bugherd\Client;
+use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
-use Illuminate\Foundation\Application as LaravelApplication;
 
 class BugherdServiceProvider extends ServiceProvider
 {
