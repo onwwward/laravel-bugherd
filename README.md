@@ -1,4 +1,4 @@
-#Laravel Bugherd
+# Laravel Bugherd
 
 [![Build Status](https://travis-ci.org/onwwward/laravel-bugherd.svg?branch=master)](https://travis-ci.org/onwwward/laravel-bugherd)
 [![StyleCI](https://styleci.io/repos/66357568/shield)](https://styleci.io/repos/65727693)
@@ -7,7 +7,7 @@
 
 This is a Laravel 5 wrapper for the [PHP Bugherd Api](https://github.com/beleneglorion/php-bugherd-api) package.
 
-##What is Bugherd?
+## What is Bugherd?
 [BugHerd](https://bugherd.com/about/) is a simple point and click bug tracker, that was founded in 2011 by Alan Downie and Matt Milosavljevic.
 
 https://bugherd.com/
@@ -15,9 +15,9 @@ https://bugherd.com/
 https://www.bugherd.com/api_v2
 
 
-##Basic Installation
+## Basic Installation
 
-###Laravel
+### Laravel
 
 Add the service provider to the providers array in ```config/app.php```:
 
@@ -35,7 +35,7 @@ Add the facade to the alias array in ```config/app.php```:
 ...
 ```
 
-###Lumen
+### Lumen
 Find the section in   ```bootstrap/app.php``` where you should register the service providers and add the following:
 
 ```php
@@ -59,7 +59,7 @@ class_alias('Onwwward\Bugherd\Facades\Bugherd', 'Bugherd');
 
 ## Configuration
 
-###Laravel
+### Laravel
 
 You'll need to provide your `apikey` which you can find under your profile settings in [Bugherd](https://bugherd.com). In [Laravel](https://laravel.com) you should be able to publish the configuration file with an `artisan` command, but you can create the file manually as well.
 
@@ -70,7 +70,7 @@ $ php artisan vendor:publish --provider="Onwwward\Bugherd\BugherdServiceProvider
 > **Where's the file?** Laravel 5 will publish the config file to `/config/bugherd.php`.
 
 
-###Lumen
+### Lumen
 
 There is no command for publishing package files in [Lumen](https://lumen.laravel.com) so you'll have to create the config file manually. Create a `config` directory in the application's root in case you don't have it. Then, either copy the `bugherd.php` file from `/vendor/onwwward/laravel-bugherd/src/config/` or create the php file returning a simple array with the correct 'apikey' .
 
@@ -83,11 +83,11 @@ return [
 ```
 
 
-##Code Example
+## Code Example
 
 There are several ways to resolve something out of the container. 
 
-###with Facade 
+### with Facade 
 
 Include the facade at the top:
 
@@ -218,9 +218,9 @@ $bugherd->api('webhook')->remove($webhookId);
 ```
 
             
-###Todo
+### Todo
 - Add logging maybe?
 
 
-###License
+### License
 This plugin is released under the permissive MIT license. Your contributions are always welcome.
